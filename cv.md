@@ -32,5 +32,9 @@
 ###### QA Testing Courses from Senla.
 
 
+## Education
+###### Completed study at the *Gomel Polytechnic College* with a degree in Installation and Operation of Electrical Equipment. At the moment, I am a 5th year student at the *Gomel State University Pavel Osipovich Sukhoi* at the Faculty of Electricity Supply.
+
+
 ## English Level
 ###### A1 Beginner
