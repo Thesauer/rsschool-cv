@@ -1,0 +1,103 @@
+.html {
+    box-sizing: border-box; /* правило для контролирования высоты  и ширины объекта */
+}
+*, *:after, *:before {
+    box-sizing: inherit; /* inherit наследует свойство от родителя */
+}
+.container {
+    display: flex; /* позволяет разделить страницу на нужное кол-во блоков */
+    max-width: 960px; /* максимальная ширина */
+    background-color: #eaeaea; /* задний фон */
+    margin: 20px auto; /* автоматическое выравние с отступами 20 пикселей */ 
+}
+.profile {
+    max-width: 350px; /* максимальная ширина */
+    background-color: #39383a; /* задний фон */
+    color: #ababab;
+}
+.profile-photo {
+    height: 270px; /* высота элемента */
+    background-image: url(https://sun9-5.userapi.com/impf/c628117/v628117652/9bbc/WUP2e_jw4ps.jpg?size=500x498&quality=96&sign=7371044b381d2c6465e0e2b331dcf8f2&type=album);
+    background-size: cover; /* масштабирует изображение как можно больше c сохранением пропорций изображения */
+    background-position: top; /* край напротив которого нужно поместить элемент (фото) */
+    background-repeat: no-repeat; /* отключает повторение фона */
+}
+.profile-info {
+    padding-left: 30px; /* отступ слева */
+    padding-right: 30px; /* отступ справа */
+    padding-top: 50px; /* отступ сверху */
+    padding-bottom: 70px; /* отступ снизу */
+}
+.profile-text {
+    line-height: 24.19 px; /* высота строки */
+    font-size: 13px; /* размер шрифта */
+    margin-bottom: 5px; /* внешний отступ снизу */
+}
+.heading {
+    margin: 0; /* внешний отступ */
+    padding-bottom: 16px; /* расстояние от нижнего края */ 
+    text-transform: uppercase; /* текст становиться прописным (большими буквами) */
+    font-weight: 700; /* толщина шрифта */
+}
+.heading-light {
+    color: #ffffff;
+    border-bottom: 2px #5a5a5a dashed; /* пунктирная полоса */
+}
+.contacts {
+    margin-bottom: 70px; /* внешний отступ снизу */
+}
+.contacts-title {
+    color: #ffffff;
+    margin-bottom: 13px; /* внешний отступ снизу */
+    font-size: 16px; /* размер шрифта */
+    font-weight: 400; /* тощина шрифта */
+}
+.contacts-text {
+    color: #ababab;
+    text-decoration: none; /* убирает оформление текста */
+    padding-left: 25px; /* внутренний отступ слева */
+    line-height: 20.97px; /* высота строки */
+}
+.contacts-item {
+    padding-top: 24px; /* расстояние от верхнего края */
+    padding-bottom: 24px; /* расстояние от нижнего края */
+    border-bottom: 2px #5a5a5a dashed; /* пунктирная полоса */
+}
+address {
+    font-style: normal; /* возвращение нормального шрифта */
+}
+.fas {
+    margin-right: 7px; /* внешний отступ справа */
+}
+.language {
+    width: 100px;
+    height: 100px;
+    border: 6px solid #5c5c5c; /* граница */
+    border-radius: 50%; /* радиус границы */
+    display: flex;
+    justify-content: center; /* определяет как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси контейнера - по центру */
+    align-items: center; /* выравнивает flex-элементы текущей flex-линии таким же образом, как и justify-content, но в перпендикулярном направлении - по центру*/
+    flex-direction: column; /* указывает на то как flex-элементы располагаются во flex-контейнере по главной оси и направлению - вертикально */
+}
+.languages {
+    padding-top: 40px; /* расстояние от верхнего края */
+    display: flex;
+    justify-content: space-around;
+}
+.lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line {
+    display: block;
+    width: 90px;
+    height: 2px;
+    background-color: #5c5c5c; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.line:nth-child(2) {
+    width: 100px;
+    margin-left: 20px;
+}
