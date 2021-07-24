@@ -8,10 +8,11 @@
     display: flex; /* позволяет разделить страницу на нужное кол-во блоков */
     max-width: 960px; /* максимальная ширина */
     background-color: #eaeaea; /* задний фон */
+    justify-content: space-between; /* равномерно распределяет все элементы по ширине flex-блока, первый элемент вначале, последний в конце * */
     margin: 20px auto; /* автоматическое выравние с отступами 20 пикселей */ 
 }
 .profile {
-    max-width: 350px; /* максимальная ширина */
+    flex-basis: 35%; /* максимальная ширина */
     background-color: #39383a; /* задний фон */
     color: #ababab;
 }
@@ -97,7 +98,84 @@ address {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.line:nth-child(2) {
+.line:nth-child(2) { /* обращение ко второму объекту */
     width: 100px;
     margin-left: 20px;
+}
+.resume {
+    padding: 25px 30px;
+    flex-basis: 63%;
+    background-color: #ffffff;
+}
+.resume-wrap {
+    border: 1px solid rgba(168, 168, 168, 0.44);
+    padding: 36px 56px;
+    /* min-height: 100%;  */
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+
+}
+.logo-img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #39383a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-line {
+    width: 43px;
+    height: 2px;
+    background-color: #39383a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo-lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* направление, в котором блоки будут располагаться вертикально */
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.logo-lines_left .logo-line:nth-child(2) {
+    margin-right: 20px;
+    width: 50px;
+}
+.logo-lines_right .logo-line:nth-child(2) {
+    margin-left: 20px;
+    width: 55px;
+}
+.about {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 30px;
+}
+.name {
+    font-size: 16px;
+    text-transform: uppercase; /* все символы текста становятся прописными (верхний регистр) */
+    letter-spacing: 10px; /* межбуквенное расстояние в тексте */
+    margin-bottom: 10px;
+}
+.position {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase; /* все символы текста становятся прописными (верхний регистр) */
+    color: #808080;
+    margin-bottom: 30px;
+}
+.about-address {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.about-contacts {
+    font-size: 10px;
+}
+.about-contacts__link {
+    text-decoration: none;
+    color: #777777;
 }
