@@ -1,1 +1,1 @@
-https://thesauer.github.io/rsschool-cv/cv
+https://thesauer.github.io/rsschool-cv/
